@@ -9,6 +9,11 @@ image:
   tag: 0.1
   pullPolicy: IfNotPresent
 
+output:
+  host: helm-guestbook-2.default.svc.cluster.local
+  port: 80
+  scheme: http
+
 service:
   type: ClusterIP
   port: 80
